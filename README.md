@@ -1,5 +1,7 @@
 # SoCal Strategy & OT Workshop
 
+Live at <https://socalstrategyot.github.io>.
+
 Static site for the annual SoCal Strategy & Organization Theory Workshop.
 Plain HTML/CSS/JS — no build step, no dependencies.
 
@@ -14,6 +16,10 @@ Everything is in `index.html`. To add next year's workshop, copy an `<article
 class="year">` block into the "Past workshops" section and update the hero.
 
 ## Wiring the sign-up form to Google Sheets
+
+**Already wired** — `ENDPOINT` in `signup.js` points at a deployed Apps Script
+web app, and submissions append to the `Signups` tab of the linked Sheet. The
+steps below are for reference, or if the endpoint ever needs replacing.
 
 The form posts to a Google Apps Script web app, which appends a row to a Sheet
 you own. Ten-minute, one-time setup:

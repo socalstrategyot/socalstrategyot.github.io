@@ -3,7 +3,7 @@
  * SETUP: paste your Apps Script /exec URL below. Instructions in README.md.
  * Until it is set, the form falls back to a mailto: link so nothing is lost.
  */
-var ENDPOINT = ""; // e.g. "https://script.google.com/macros/s/AKfy.../exec"
+var ENDPOINT = "https://script.google.com/macros/s/AKfycbz0O95wGFCQEOSYRCTGAMJE0_1SwyqHjvps92BPUE4GXKJZ1olF5jfnf1qMEeWvOzbFXg/exec";
 var FALLBACK_EMAIL = "jane.wu@anderson.ucla.edu";
 
 (function () {

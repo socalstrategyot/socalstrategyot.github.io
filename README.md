@@ -53,4 +53,7 @@ python3 -m http.server 8000
 
 ## Deployment
 
-GitHub Pages, served from the `main` branch root.
+GitHub Pages, served from the `main` branch root of an organization-owned
+`*.github.io` repo, so the URL survives the annual host rotation. To hand the
+site to next year's organizers, add them as org owners — no URL change, no
+migration.

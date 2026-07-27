@@ -267,6 +267,57 @@ h1 {
   color: var(--muted);
 }
 
+/* ---------- photo ---------- */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 520px) minmax(0, 1fr);
+  gap: 0 72px;
+  align-items: start;
+}
+
+.photo-text { padding-top: 4px; }
+
+.photo { margin: 0; }
+
+.photo picture { display: block; }
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  /* warm, low-contrast lift so the photo sits in the sunset palette
+     rather than fighting it */
+  box-shadow: 0 1px 2px rgba(90, 60, 40, 0.06),
+              0 18px 40px -14px rgba(120, 70, 45, 0.22);
+}
+
+.photo figcaption {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.photo-text h2 {
+  margin: 0 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.photo-text p {
+  margin: 0;
+  max-width: 32ch;
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  font-style: italic;
+  line-height: 1.55;
+  color: #3d424a;
+}
+
 /* ---------- form ---------- */
 
 .signup { margin: 30px 0 0; max-width: 420px; }
@@ -347,4 +398,8 @@ h1 {
   .col-label h2 { margin-top: 0; }
   .facts { gap: 18px 40px; margin-top: 40px; }
   .people li { padding-right: 18px; }
+
+  .photo-grid { grid-template-columns: 1fr; gap: 28px; }
+  .photo { order: 2; }
+  .photo-text p { max-width: none; }
 }

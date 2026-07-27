@@ -44,6 +44,25 @@ new response.
 If you re-edit the Apps Script later, use **Deploy → Manage deployments → Edit →
 New version**, or the URL will keep serving the old code.
 
+### Troubleshooting: submissions succeed but the Sheet looks empty
+
+The script writes to a tab named **`Signups`**, creating it if missing. First
+check the tab strip at the bottom of the spreadsheet — the rows are not in
+`Sheet1` — and reload the page if the file was already open.
+
+If that isn't it, the deployment is bound to a different spreadsheet than the
+one you're looking at. Ask it directly:
+
+```
+<your /exec URL>?diag=f7374cd2412512d2
+```
+
+That returns the name, ID, and URL of the spreadsheet it is actually writing to,
+plus a row count for every tab. It deliberately returns no row *contents* —
+the endpoint is public, so sign-up emails must never be readable from it.
+
+Change `DIAG_TOKEN` in the script if you'd rather rotate the secret.
+
 ### Before it's wired up
 
 While `ENDPOINT` is empty the form falls back to opening a pre-filled `mailto:`

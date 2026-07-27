@@ -69,31 +69,7 @@
     </div>
   </section>
 
-  <section class="band tinted photo-band">
-    <div class="wrap photo-grid">
-      <figure class="photo">
-          <picture>
-            <source type="image/webp"
-                    srcset="photos/2026-ucr-340.webp 340w, photos/2026-ucr-680.webp 680w"
-                    sizes="(max-width: 760px) 62vw, 320px">
-            <img src="photos/2026-ucr-680.jpg"
-                 srcset="photos/2026-ucr-340.jpg 340w, photos/2026-ucr-680.jpg 680w"
-                 sizes="(max-width: 760px) 62vw, 320px"
-                 width="680" height="850"
-                 loading="lazy" decoding="async"
-                 alt="Participants of the 2026 SoCal Strategy and Organization Theory Workshop gathered on a staircase at UC Riverside.">
-          </picture>
-          <figcaption>The 2026 workshop, hosted at UC Riverside.</figcaption>
-        </figure>
-        <div class="photo-text">
-          <h2>Last year</h2>
-          <p>With SoCal traffic, we otherwise wouldn't get a chance to
-            intersect.</p>
-        </div>
-    </div>
-  </section>
-
-  <section id="signup" class="band">
+  <section id="signup" class="band tinted">
     <div class="wrap two-col">
       <div class="col-label"><h2>Stay posted</h2></div>
       <div class="col-body">
@@ -130,7 +106,25 @@
       <div class="col-body">
 
         <article class="year">
-          <h3><span class="yr">2026</span> UC Riverside</h3>
+          <h3><span class="yr">2026</span>
+            <span class="peek">
+              <button type="button" class="peek-btn" aria-describedby="peek-2026">UC Riverside</button>
+              <span class="peek-card" id="peek-2026" role="tooltip">
+                <picture>
+                  <source type="image/webp"
+                          srcset="photos/2026-ucr-340.webp 340w, photos/2026-ucr-680.webp 680w"
+                          sizes="300px">
+                  <img src="photos/2026-ucr-340.jpg"
+                       srcset="photos/2026-ucr-340.jpg 340w, photos/2026-ucr-680.jpg 680w"
+                       sizes="300px" width="340" height="425"
+                       loading="lazy" decoding="async"
+                       alt="Participants of the 2026 SoCal Strategy and Organization Theory Workshop gathered on a staircase at UC Riverside.">
+                </picture>
+                <span class="peek-cap">With SoCal traffic, we otherwise
+                  wouldn't get a chance to intersect.</span>
+              </span>
+            </span>
+          </h3>
           <p class="role">Organized by</p>
           <ul class="people">
             <li><a href="https://www.scott-c-ganz.com/">Scott Ganz</a></li>
